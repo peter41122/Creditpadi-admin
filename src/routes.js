@@ -10,7 +10,7 @@ import Setting from "./views/Setting";
 
 var routes = [
   {
-    path: "/",
+    path: "/index",
     name: "Home",
     icon: "",
     component: Index,
@@ -39,7 +39,7 @@ var routes = [
   },
   {
     path: "/balance",
-    name: "Account Balance",
+    name: "Balance",
     icon: "",
     component: Balance,
     layout: "/admin",
@@ -53,21 +53,21 @@ var routes = [
   },
   {
     path: "/profile",
-    name: "Account Profile",
+    name: "Profile",
     icon: "",
     component: Profile,
     layout: "/admin",
   },
   {
     path: "/cardsmng",
-    name: "Cards",
+    name: "Cards Management",
     icon: "",
     component: CardsManagement,
     layout: "/admin",
   },
   {
     path: "/setting",
-    name: "Account Setting",
+    name: "Setting",
     icon: "",
     component: Setting,
     layout: "/admin",
