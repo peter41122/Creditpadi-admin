@@ -121,6 +121,7 @@ const Register = () => {
                 <button
                   type="submit"
                   className="btn btn-default btn-lg rounded-pill px-4 w-100"
+                  onClick={() => handleClick("/admin")}
                 >
                   Agree & Join
                 </button>

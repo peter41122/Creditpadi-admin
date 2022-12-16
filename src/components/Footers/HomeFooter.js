@@ -7,7 +7,7 @@ const HomeFooter = () => {
         <div className="align-items-center justify-content-xl-between row">
           <div className="col-xl-6">
             <div className="copyright text-center text-xl-start text-muted">
-              © 2022 Creditpadi Consulting Group
+              © {new Date().getFullYear()} Creditpadi Consulting Group
             </div>
           </div>
           <div className="col-xl-6"></div>

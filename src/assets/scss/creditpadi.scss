@@ -1,5 +1,3 @@
-@import 'bootstrap/dist/css/bootstrap.css';
-
 .btn-default {
   --bs-btn-color: #fff;
   --bs-btn-bg: #002060;
@@ -24,4 +22,9 @@
 
 .bg-default {
   background-color: #002060 !important;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.5rem;
 }

@@ -1,2 +1,52 @@
+.header {
+  transition: all 0.5s;
+  z-index: 997;
+  height: 60px;
+  box-shadow: 0px 2px 20px rgb(1 41 112 / 10%);
+  background-color: #fff;
+  padding-left: 20px;
 
+  .navbar-brand {
+    width: 280px;
+    line-height: 1;
+    color: #012970;
+  }
 
+  .toggle-sidebar-btn {
+    font-size: 28px;
+    padding-left: 10px;
+    cursor: pointer;
+    color: #012970;
+  }
+
+  .header-nav {
+    >ul {
+      margin: 0;
+      padding: 0;
+    }
+
+    .nav-item {
+      list-style-type: none;
+    }
+
+    .nav-profile {
+      color: #012970;
+    }
+
+    .nav-profile img {
+      border: 1px solid lightgray;
+      max-height: 50px;
+    }
+  }
+
+}
+
+// @media (min-width: 1200px) {
+//   .logo {
+//     width: 280px;
+//   }
+// }
+
+// .logo {
+//   line-height: 1;
+// }

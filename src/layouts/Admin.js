@@ -22,13 +22,7 @@ const Admin = (props) => {
   const getRoutes = (routes) => {
     return routes.map((prop, key) => {
       if (prop.layout === "/admin") {
-        return (
-          <Route
-            path={prop.path}
-            element={prop.component}
-            key={key}
-          />
-        );
+        return <Route path={prop.path} element={prop.component} key={key} />;
       } else {
         return null;
       }
@@ -37,12 +31,12 @@ const Admin = (props) => {
 
   return (
     <>
-      <Sidebar routes={routes} />
       <AdminNavbar />
-        <Routes>
-          {getRoutes(routes)}
-          <Route path="/" element={<Navigate replace to="/admin/index" />} />
-        </Routes>
+      {/* <Sidebar routes={routes} /> */}
+      <Routes>
+        {getRoutes(routes)}
+        <Route path="/*" element={<Navigate replace to="/admin/dashboard" />} />
+      </Routes>
       <AdminFooter />
     </>
   );
