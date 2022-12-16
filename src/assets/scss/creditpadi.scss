@@ -1,0 +1,27 @@
+@import 'bootstrap/dist/css/bootstrap.css';
+
+.btn-default {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #002060;
+  --bs-btn-border-color: #002060;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #0b5ed7;
+  --bs-btn-hover-border-color: #0a58ca;
+  --bs-btn-focus-shadow-rgb: 49, 132, 253;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #0a58ca;
+  --bs-btn-active-border-color: #0a53be;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: #002060;
+  --bs-btn-disabled-border-color: #002060;
+}
+
+.btn-outline-default {
+  background-color: #ffffff;
+  box-shadow: 0 1px 2px 1px #ddd;
+}
+
+.bg-default {
+  background-color: #002060 !important;
+}

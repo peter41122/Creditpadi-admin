@@ -20,14 +20,14 @@ var routes = [
     path: "/signin",
     name: "Login",
     icon: "",
-    component: Login,
+    component: <Login />,
     layout: "/auth",
   },
   {
     path: "/signup",
     name: "Register",
     icon: "",
-    component: Register,
+    component: <Register />,
     layout: "/auth",
   },
   {

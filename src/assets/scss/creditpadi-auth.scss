@@ -1,0 +1,35 @@
+.authframe {
+  height: 100vh;
+
+  .signup-content {
+    height: 100%;
+
+    .left-panel {
+      background-color: #002060;
+    }
+
+    .left-panel {
+      .brand {
+        font-family: 'Poppins';
+        font-size: 26px;
+        font-weight: bold;
+        color: white;
+        padding: 3rem 2rem;
+      }
+    }
+
+    .right-panel {
+      .hr-area {
+        position: relative;
+
+        .hr-area-context {
+          font-size: 16px;
+          position: absolute;
+          top: -15px;
+          background-color: white;
+          padding: 0.25rem 1rem;
+        }
+      }
+    }
+  }
+}
