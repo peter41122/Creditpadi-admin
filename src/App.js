@@ -11,11 +11,11 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        {/* <Route index element={<HomeLayout />} /> */}
         <Route path="/home" element={<HomeLayout />} />
-        <Route path="/admin" element={<AdminLayout />} />
+        <Route path="/admin/*" element={<AdminLayout />} />
         <Route path="/auth/*" element={<AuthLayout />} />
-        <Route path="/" element={<Navigate replace to="/home" />} />
+
+        <Route path="/*" element={<Navigate replace to="/home" />} />
       </Routes>
     </BrowserRouter>
   );
