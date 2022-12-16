@@ -24,7 +24,6 @@ const Auth = () => {
 
   return (
     <>
-      Auth Layout
       <Routes>
         {getRoutes(routes)}
         <Route path="/" element={<Navigate replace to="/auth/signup" />} />
