@@ -2,7 +2,7 @@ import React from "react";
 
 const AdminNavbar = (props) => {
   return (
-    <div id="header" class="header fixed-top d-flex align-items-center">
+    <div id="header" className="header fixed-top d-flex align-items-center">
       <div className="d-flex align-items-center justify-content-between">
         <a className="navbar-brand" href="/admin/dashboard">
           Creditpadi

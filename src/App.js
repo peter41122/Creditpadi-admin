@@ -5,7 +5,7 @@ import HomeLayout from "./layouts/Home";
 import AuthLayout from "./layouts/Auth";
 import AdminLayout from "./layouts/Admin";
 
-import './assets/scss/creditpadi.scss';
+import "./assets/scss/creditpadi.scss";
 
 function App() {
   return (

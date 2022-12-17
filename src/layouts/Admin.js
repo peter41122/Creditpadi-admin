@@ -32,7 +32,7 @@ const Admin = (props) => {
   return (
     <>
       <AdminNavbar />
-      {/* <Sidebar routes={routes} /> */}
+      <Sidebar routes={routes} />
       <Routes>
         {getRoutes(routes)}
         <Route path="/*" element={<Navigate replace to="/admin/dashboard" />} />
