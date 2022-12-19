@@ -1,9 +1,9 @@
 import React from "react";
 
-const Footer = () => {
+const Footer = ({ collapse }) => {
   return (
-    <footer className="">
-      <div className="container">
+    <footer className={`footer ${collapse ? "sidebar-nav-collapsed" : ""}`}>
+      <div className="px-4">
         <div className="align-items-center justify-content-xl-between row">
           <div className="col-xl-6">
             <div className="copyright text-center text-xl-start text-muted">

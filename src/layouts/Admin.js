@@ -30,11 +30,16 @@ const Admin = () => {
     <>
       <AdminNavbar collapse={collapse} setCollapse={handleCollapse} />
       <Sidebar collapse={collapse} routes={routes} />
-      <Routes>
-        {getRoutes(routes)}
-        <Route path="/*" element={<Navigate replace to="/admin/dashboard" />} />
-      </Routes>
-      <AdminFooter />
+      <main className={`maincontent ${collapse ? "sidebar-nav-collapsed" : ""}`} >
+        <Routes>
+          {getRoutes(routes)}
+          <Route
+            path="/*"
+            element={<Navigate replace to="/admin/dashboard" />}
+          />
+        </Routes>
+      </main>
+      <AdminFooter collapse={collapse} />
     </>
   );
 };
