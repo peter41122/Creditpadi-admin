@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
 
 import AdminNavbar from "../components/Navbars/AdminNavbar";
@@ -9,15 +9,8 @@ import routes from "../routes";
 
 import "../assets/scss/creditpadi-admin.scss";
 
-const Admin = (props) => {
-  // const mainContent = React.useRef(null);
-  // const location = useLocation();
-
-  // React.useEffect(() => {
-  //   document.documentElement.scrollTop = 0;
-  //   document.scrollingElement.scrollTop = 0;
-  //   mainContent.current.scrollTop = 0;
-  // }, [location]);
+const Admin = () => {
+  const [collapse, setCollapse] = useState(true);
 
   const getRoutes = (routes) => {
     return routes.map((prop, key) => {
@@ -29,10 +22,14 @@ const Admin = (props) => {
     });
   };
 
+  const handleCollapse = () => {
+    setCollapse(!collapse);
+  };
+
   return (
     <>
-      <AdminNavbar />
-      <Sidebar routes={routes} />
+      <AdminNavbar collapse={collapse} setCollapse={handleCollapse} />
+      <Sidebar collapse={collapse} routes={routes} />
       <Routes>
         {getRoutes(routes)}
         <Route path="/*" element={<Navigate replace to="/admin/dashboard" />} />
